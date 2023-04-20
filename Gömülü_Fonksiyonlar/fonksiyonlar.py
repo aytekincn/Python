@@ -80,6 +80,44 @@ print( f )
 for i,j in enumerate( liste5 ):  # Bu şekilde kullanıldığında 0 Elma diye başlayarak devam eder hem indeks numarası hem de elemanı görürüz.
     print( i,j )
 
+#-------------------------------------------------------------------------------------
+
+# ALL ve ANY FONKSİYONLARI all fonksiyonu bütün değerler true ise true en az bir tane değer false ise false değer döndürür. Any ise tam tersi false ise hepsi false en az 1 true ise true.
+lists = [True, True, False, True, True ]
+print( all( lists ) ) # Burada en az bir değer false olduğu için false sonucunu alırız.
+
+lists1 = [True,True,True]
+
+print( all( lists1 ) ) # hepsi true olduğu için true alırız
+
+print( any( lists ) ) # Herhangi biri true olduğu için true sonucunu alırız.
+
+lists3 = [False, False, False,False ]
+
+print( any( lists3 ) )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
