@@ -60,7 +60,19 @@ def fonksiyon4 ( *args, **kwargs ):
 fonksiyon4(1,2,3,4,5,6,7,8,9, isim = "Aytekin", soyisim = "Can", numara = 124124 )
 
 
+# iç içe fonksiyonlar.
 
+def fonksiyon5( *args ): # Paramtrelerimiz buraya gönderiliyor.
+
+    def toplama( args ): # args toplama fonksiyonumuz içerisinde gönderiliyor. Burada işlemimiz yapılıyor
+        toplam = 0
+        for i in args :
+            toplam += i
+
+        return toplam
+    print( toplama( args ) ) # Sonrasında ekrana yazdırmak istediğimiz kısım yazılıyor.
+
+fonksiyon5( 1, 2, 3, 4, 5, 6, 7 )
 
 
 
