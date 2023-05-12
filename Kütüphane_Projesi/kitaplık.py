@@ -45,7 +45,7 @@ class Kütüphane():
 
 
     def kitap_sorgula(self, isim ): # Kitap sorgulamak için bir fonksiyon yazıyoruz
-        sorgu = "SELECT * From kitaplar WHERE İsim = ? "
+        sorgu = "SELECT * From kitaplar WHERE isim = ? "
         self.cursor.execute( sorgu, ( isim, ) )
         kitaplar = self.cursor.fetchall()
 

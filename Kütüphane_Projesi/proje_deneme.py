@@ -1,6 +1,6 @@
 import time
 
-from kütüphane import *  # Kütüphane sınıfımızdaki her şeyi kullanmak için dosyaları Sources Root'a çevirdik.
+from kitaplık import *  # Kütüphane sınıfımızdaki her şeyi kullanmak için dosyaları Sources Root'a çevirdik.
 
 print("""************************************
 
@@ -35,7 +35,8 @@ while ( True ):
         isim = input("Hangi Kitabı İstiyorsunuz? : ") # Kullanıcının sorgulamak istediği kitap için input alırız.
         print("Kitap Sorgulanıyor...")
         time.sleep( 2 )  # Gerçekçilik adına kitap sorgumuzu 2 sn delayliyoruz.
-        kütüphane.kitap_sorgula( isim )
+        kitaplık.kitap_sorgula( isim )
+        print(  isim )
 
     elif ( işlem == "3"):
         print("Lütfen Eklemek İstediğiniz Kitabın Bilgilerini Girin..")

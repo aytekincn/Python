@@ -38,4 +38,3 @@ print( df.iloc[1] ) # Bu şekilde kullanılır.
 print ( df.loc["A","Column1"] )  # Bu şekilde kullandığımız zaman spesifik olarak istediğimiz satır ve sütunu alırız.
 
 print ( df.loc[ [ "A", "B"], ["Column1","Column2"] ] ) # Burada da column1 ve column2 deki satırları alırız.
-

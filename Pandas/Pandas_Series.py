@@ -30,7 +30,7 @@ ser2017 = pd.Series([5, 10, 15, 20], ["Buğday", "Mısır", "Çilek", "Pancar"] 
 
 
 
-ser2018 = pd.Series( [10, 12, 33, 43], ["Buğday", "Mısır", "Erik", "Pancar"] )
+ser2018 = pd.Series( data = [10, 12, 33, 43], index = ["Buğday", "Mısır", "Erik", "Pancar"] )
 
 print( ser2017 + ser2018 )  # Burada aynı olan değerler toplandı ancak farklı isimdeki değerlere NaN ( not a number ) çıktı. İkiside aynı olmadığı için bu NaN hatası aldık.
 
@@ -39,3 +39,5 @@ print( ser2017 + ser2018 )  # Burada aynı olan değerler toplandı ancak farkl�
 total = ser2017 + ser2018
 
 print( total ["Buğday"] ) # Bu şekilde datamıza ulaşabiliriz.
+
+print( total ["Pancar"])
